@@ -1,0 +1,1 @@
+export const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=3741953c5ed19a50aa9d`
