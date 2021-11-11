@@ -7,4 +7,10 @@
   grid-template-columns: 1fr 453px;
   column-gap: 120px;
   position: relative;
+
+  @media (max-width: 900px) {
+    display: block;
+    align-items: center;
+    margin: 36px 36px;
+  }
 }
