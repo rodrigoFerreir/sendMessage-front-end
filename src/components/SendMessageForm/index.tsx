@@ -17,8 +17,9 @@ export const SendMessageForm: React.FC = () => {
         await api.post('messages', { message }).then(() =>
             setMessage('')
         ).catch(err => {
-            alert(err)
+            alert("Erro ao enviar mensagem!" + err)
         })
+        window.location.reload()
     }
 
     return (
