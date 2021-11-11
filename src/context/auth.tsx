@@ -46,8 +46,10 @@ export const AuthProvider = ({ children }: AuthProviderType) => {
         api.defaults.headers.common.authorization = `Bearer ${token}`;
 
         setUser(user)
-        localStorage.setItem('@dowhile:token', token)
-        localStorage.setItem('@dowhile:user', JSON.stringify(user))
+        if (user && token) {
+            localStorage.setItem('@dowhile:token', token)
+            localStorage.setItem('@dowhile:user', JSON.stringify(user))
+        }
     }
 
     const signOut = () => {
