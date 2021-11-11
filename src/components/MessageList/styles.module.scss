@@ -9,6 +9,9 @@
     height: 28px;
     margin: 32px 0;
   }
+  @media (max-width: 900px) {
+    margin-bottom: 26px;
+  }
 }
 
 .messageList {
